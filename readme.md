@@ -1,6 +1,7 @@
 # Proses Booting
 ### Apa itu Booting?
-Booting adalah proses awal ketika komputer atau perangkat lainnya dinyalakan atau di-restart. Istilah "booting" sendiri berasal dari kata "bootstrap," yang awalnya merujuk pada konsep mengangkat diri sendiri dengan tali sepatu. Proses booting bertujuan untuk memuat sistem operasi dan perangkat lunak lainnya ke dalam memori sehingga komputer dapat berfungsi secara normal.
+Booting adalah proses awal ketika komputer atau perangkat lainnya dinyalakan atau di-restart. Proses booting bertujuan untuk memuat sistem operasi dan perangkat lunak lainnya ke dalam memori sehingga komputer dapat berfungsi secara normal.
+[![img-1](img/1.png)]()
 
 ## Langkah-Langkah Booting
 1) Power On

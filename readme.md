@@ -213,5 +213,6 @@ Booting adalah proses awal ketika komputer atau perangkat lainnya dinyalakan ata
 - https://www.gramedia.com/literasi/pengertian-sistem-operasi/
 - https://telkomuniversity.ac.id/pengertian-data-fungsi-jenis-jenis-manfaat-dan-contohnya/
 - https://bsi.today/sistem-operasi/
+- https://asani.co.id/blog/booting-adalah/
 
 [def]: #langkah-langkah-booting

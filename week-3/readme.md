@@ -40,11 +40,11 @@
 
 1. Calvin percobaan menjalankan FLOPS64 5 kali
    ![img](../assets/week-3/flops_calvin.jpeg)
-   Percobaan menjalankan IOPS64 5 kali
+  Percobaan menjalankan IOPS64 5 kali
    ![img](../assets/week-3/iops_calvin.jpeg)
 2. Devi percobaan menjalankan FLOPS64 5 kali
    ![img](../assets/week-3/flops_devi.png)
-   Percobaan menjalankan IOPS64 5 kali
+  Percobaan menjalankan IOPS64 5 kali
    ![img](../assets/week-3/iops_devi.png)
 
 ## Percobaan

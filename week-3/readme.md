@@ -52,9 +52,9 @@
 ## Percobaan
 
 | Nama | Max Single Core FLOPS | Max Single Core IOPS | Max CPU FLOPS | Max CPU IOPS |
-| ------------ | --------------------- | -------------------- | ------------- | ------------ |
-| Calvin        | 6.8                   | 6.6                  | 13.7          | 13.1         |
-| Devi          | 6.5                   | 6.3                  | 13           | 12.7          |
+| ------------ | --------------------- | -------------------- | ------------- | ------------- |
+| Devi        | 6.5                   | 6.3                   | 13            | 12.7          |
+| Calvin      | 6.8                   | 6.6                   | 13.7          | 13.1          |
 
 
 Dari data yang ditunjukkan oleh table diatas menunjukkan bahwa setiap laptop dengan processor yang berbeda menyebabkan hasil dari test FLOPS dan IOPS berbeda-beda tergantung kecepatan dari masing-masing CPU/processor.

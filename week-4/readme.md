@@ -295,6 +295,7 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
 1. Lihat daftar secara lengkap pada direktori aktif, belokkan tampilan standard output   ke file baru.
    ![img](../assets/week-4/list1.png)
 2. Lihat daftar secara lengkap pada direktori /etc/passwd, belokkan tampilan standard output ke file baru tanpa menghapus file baru sebelumnya.
+   
    ![img](../assets/week-4/list2.png)
 3. Urutkan file baru dengan cara membelokkan standard input.
    ![img](../assets/week-4/list3.png)
@@ -311,8 +312,8 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
    Palembang
    Lampung
    ```
+   Dengan menggunakan notasi **here document (<@@@ ...@@@)** . [HINT](https://www.geeksforgeeks.org/how-to-use-here-document-in-bash-programming/)
    ![img](../assets/week-4/list6.png)
-  Dengan menggunakan notasi **here document (<@@@ ...@@@)** . [HINT](https://www.geeksforgeeks.org/how-to-use-here-document-in-bash-programming/)
 
 1. Hitung jumlah baris, kata dan karakter dari file baru.urut dengan menggunakan filter dan tambahkan data tersebut ke file baru.
    ![img](../assets/week-4/list7.png)

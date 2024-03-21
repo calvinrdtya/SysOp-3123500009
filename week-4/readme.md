@@ -146,7 +146,7 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
    $ mkdir mydir
    $ mkdir mydir **(Terdapat pesan error)**
    ```
-    ![img](../assets/week-4/2.png)
+    ![img](../assets/week-4/3.png)
 
 ## Percobaan 2 : Pembelokan (redirection)
 1. Pembelokan standar output

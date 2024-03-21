@@ -51,10 +51,10 @@
 
 ## Percobaan
 
-| Nama | Max Single Core FLOPS | Max Single Core IOPS | Max CPU FLOPS | Max CPU IOPS |
-| ------------ | --------------------- | -------------------- | ------------- | ------------ |
-| Calvin        | 6.8                   | 6.6                  | 13.7          | 13.1         |
-| Devi          | 6.5                   | 6.3                  | 13           | 12.7          |
+| Nama | Processor | Max Single Core FLOPS | Max Single Core IOPS | Max CPU FLOPS | Max CPU IOPS |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+| Calvin  | AMD Ryzen™ 3 7320U up to 4.1 GHz max boost (8 CPUs), ~2.4GHz      | 6.8                   | 6.6                  | 13.7         | 13.1         |
+| Devi    | 13th Gen Intel(R) Core(TM) i7-1360P (16 CPUs), ~2.2GHz      | 6.5                   | 6.3                  | 13        | 12.7         |
 
 
 Dari data yang ditunjukkan oleh table diatas menunjukkan bahwa setiap laptop dengan processor yang berbeda menyebabkan hasil dari test FLOPS dan IOPS berbeda-beda tergantung kecepatan dari masing-masing CPU/processor.

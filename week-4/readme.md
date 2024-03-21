@@ -211,9 +211,9 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
    ```
    ![img](../assets/week-4/10.png)
 8. Notasi – (input keyboard) adalah representan input dari keyboard. Artinya menampilkan file 1, kemudian menampilkan input dari keyboard dan menampilkan file 2. Perhatikan bahwa notasi “-“ berarti menyelipkan input dari keyboard
-  ```
-  $ cat myfile.txt – surat
-  ```
+   ```
+   $ cat myfile.txt – surat
+   ```
    ![img](../assets/week-4/11.png)
 
 ## Percobaan 3 : Pipa (pipeline)

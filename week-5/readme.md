@@ -124,16 +124,24 @@ Utilitas untuk melakukan pengontrolan proses dapat ditemukan pada sistem UNIX ad
 1. Pindah ke _command line terminal_ (tty2) dengan menekan __Ctrl+Alt+F2__ dan login ke terminal sebagai user.
    ![img](../week-5/assets/1.png)
 2. Instruksi ps (_process status_) digunakan untuk melihat kondisi proses yang ada. PID adalah Nomor Identitas Proses, TTY adalah nama terminal dimana proses tersebut aktif, STAT berisi S (_Sleeping_) dan R (_Running_), __COMMAND__ merupakan instruksi yang digunakan.
-    - `$ ps`
+     ```
+    $ ps
+    ```
     ![img](../week-5/assets/2.png)
 3. Untuk melihat faktor/elemen lainnya, gunakan option –u (user). %CPU adalah presentasi CPU time yang digunakan oleh proses tersebut, %MEM adalah presentasi system memori yang digunakan proses, SIZE adalah jumlah memori yang digunakan, RSS (_Real System Storage_) adalah jumlah memori yang digunakan, __START__ adalah kapan proses tersebut diaktifkan.
-    - `$ ps -u`
+    ```
+    $ ps -u
+    ```
     ![img](../week-5/assets/3.png)
 4. Mencari proses yang spesifik pemakai. Proses diatas hanya terbatas pada proses milik pemakai dimana pemakai teresbut melakukan login.
-    - `$ ps –u < user >`
+    ```
+    $ ps –u < user >
+    ```
     ![img](../week-5/assets/4.png)
 5. Mencari proses lainnya gunakan opsi a (_all_) dan au (_all user_).
-    - `$ ps –a`
+    ```
+    $ ps –a
+    ```
     ![img](../week-5/assets/5.png)
 6. __Logout__ dan tekan __Alt+F7__ untuk kembali ke mode grafis.
     ![img](../week-5/assets/6.png)
@@ -142,49 +150,75 @@ Utilitas untuk melakukan pengontrolan proses dapat ditemukan pada sistem UNIX ad
 1. Pindah ke _command line terminal_ (tty2) dengan menekan __Ctrl+Alt+F2__ dan login ke terminal sebagai user.
     ![img](../week-5/assets/1.png)
 2. Ketik __ps –eH__ dan tekan __Enter__. Opsi __e__ memilih semua proses dan opsi __H__ menghasilkan tampilan proses secara hierarki. Proses child muncul dibawah proses parent. Proses child ditandai dengan awalan beberapa spasi.
-    - `$ ps -eH`
+    ```
+    $ ps -eH
+    ```
     ![img](../week-5/assets/2.2.png)
 3. Ketik __ps –e f__ dan tekan __Enter__. Tampilan serupa dengan langkah 2. Opsi __–f__ akan menampilkan status proses dengan karakter grafis (\ dan _)
-    - `$ ps –e f`
+    ```
+    $ ps –e f
+    ```
     ![img](../week-5/assets/2.3.png)
 4. Ketik __pstree__ dan tekan __Enter__. Akan ditampilkan semua proses pada sistem dalam bentuk hirarki parent/child. Proses parent di sebelah kiri proses child. Sebagai contoh proses __init__ sebagai parent (_ancestor_) dari semua proses pada sistem. Beberapa child dari __init__ mempunyai child. Proses __login__ mempunyai proses __bash__ sebagai child. Proses __bash__ mempunyai proses child __startx__. Proses startx mempunyai child __xinit__ dan seterusnya.
-    - `$ pstree`
+    ```
+    $ pstree
+    ```
     ![img](../week-5/assets/2.4.png)
 5. Ketik __pstree | grep mingetty__ dan tekan __Enter__. Akan menampilkan semua proses __mingetty__ yang berjalan pada system yang berupa _console virtual_. Selain menampikan semua proses, proses dikelompokkan dalam satu baris dengan suatu angka sebagai jumlah proses yang berjalan.
-    - `$ pstree | grep mingetty`
+    ```
+    $ pstree | grep mingetty
+    ```
     ![img](../week-5/assets/2.5.png)
 6. Untuk melihat semua PID untuk proses gunakan opsi __–p__.
-    - `$ pstree –p`
+    ```
+    $ pstree –p
+    ```
     ![img](../week-5/assets/2.6.png)
 7. Untuk menampilkan proses dan ancestor yang tercetak tebal gunakan opsi __–h__.
-    - `$ pstree –h`
+    ```
+    $ pstree –h
+    ```
     ![img](../week-5/assets/2.7.png)
 
 ## Percobaan 3 (Menampilkan Status Proses dengan Berbagai Format)
 1. Pindah ke _command line terminal_ (tty2) dengan menekan __Ctrl+Alt+F2__ dan login ke terminal sebagai user.
     ![img](../week-5/assets/1.png)
 2. Ketik __ps –e | more__ dan tekan __Enter__. Opsi __-e__ menampilkan semua proses dalam bentuk 4 kolom : PID, TTY, TIME dan CMD.
-    - `$ ps –e | more`
+    ```
+    $ ps –e | more
+    ```
     ![img](../week-5/assets/3.1.png)
-Jika halaman penuh terlihat prompt --More-- di bagian bawah screen, tekan q untuk kembali ke prompt perintah.
+
+    Jika halaman penuh terlihat prompt --More-- di bagian bawah screen, tekan q untuk kembali ke prompt perintah.
 
 3. Ketik __ps ax | more__ dan tekan __Enter__. Opsi __a__ akan menampilkan semua proses yang dihasilkan terminal (TTY). Opsi __x__ menampilkan semua proses yang tidak dihasilkan terminal. Secara logika opsi ini sama dengan opsi __–e__. Terdapat 5 kolom : PID, TTY, STAT, TIME dan COMMAND.
-    - `$ ps ax | more`
+    ```
+    $ ps ax | more
+    ```
     ![img](../week-5/assets/3.2.png)
-Jika halaman penuh terlihat prompt --More-- di bagian bawah screen, tekan __q__ untuk kembali ke prompt perintah.
+
+    Jika halaman penuh terlihat prompt --More-- di bagian bawah screen, tekan __q__ untuk kembali ke prompt perintah.
 
 4. Ketik __ps –e f | more__ dan tekan __Enter__. Opsi __–e f__ akan menampilkan semua proses dalam format daftar penuh.
-    - `$ ps ef | more`
+    ```
+    $ ps ef | more
+    ```
     ![img](../week-5/assets/3.3.png)
-Jika halaman penuh terlihat prompt --More-- di bagian bawah screen, tekan __q__ untuk kembali ke prompt perintah.
+
+    Jika halaman penuh terlihat prompt --More-- di bagian bawah screen, tekan __q__ untuk kembali ke prompt perintah.
 
 5. Ketik __ps –eo pid, cmd | more__ dan tekan __Enter__. Opsi __–eo__ akan menampilkan semua proses dalam format sesuai definisi user yaitu terdiri dari kolom PID dan CMD.
-    - `$ ps –eo pid,cmd | more`
+    ```
+    $ ps –eo pid,cmd | more
+    ```
     ![img](../week-5/assets/3.4.png)
-Jika halaman penuh terlihat prompt --More-- di bagian bawah screen, tekan __q__ untuk kembali ke prompt perintah.
+
+    Jika halaman penuh terlihat prompt --More-- di bagian bawah screen, tekan __q__ untuk kembali ke prompt perintah.
 
 6. Ketik __ps –eo pid,ppid,%mem,cmd | more__ dan tekan __Enter__. Akan menampilkan kolom PID, PPID dan %MEM. PPID adalah proses ID dari proses parent. %MEM menampilkan persentasi memory system yang digunakan proses. Jika proses hanya menggunakan sedikit memory system akan ditampilkan 0.
-    - `$ ps –eo pid,ppid,%mem,cmd | more`
+    ```
+    $ ps –eo pid,ppid,%mem,cmd | more
+    ```
     ![img](../week-5/assets/3.5.png)
 7. Logout dan tekan Alt+F7 untuk kembali ke mode grafis
     ![img](../week-5/assets/6.png)
@@ -193,20 +227,38 @@ Jika halaman penuh terlihat prompt --More-- di bagian bawah screen, tekan __q__ 
 1. Pindah ke command line terminal (tty2) dengan menekan Ctrl+Alt+F2 dan login ke terminal sebagai user.
     ![img](../week-5/assets/1.png)
 2. Gunakan perintah yes yang mengirim output y yang tidak pernah berhenti
-    - `$ yes` Gunakan Ctrl-C untuk menghentikan.
+    ```
+    $ yes
+    ```
+    gunakan Ctrl-C untuk menghentikan
+
     ![img](../week-5/assets/4.1.png)
 3. Belokkan standart output ke /dev/null
-    - `$ yes > /dev/null` Gunakan Ctrl-C untuk menghentikan.
+    ```
+    $ yes > /dev/null
+    ```
+    gunakan Ctrl-C untuk menghentikan
+
     ![img](../week-5/assets/4.2.png)
 4. Salah satu cara agar perintah yes tetap dijalankan tetapi shell tetap digunakan untuk hal yang lain dengan meletakkan proses pada background dengan menambahkan karakter & pada akhir perintah.
-    - `$ yes > /dev/null &` Angka dalam ”[ ]” merupakan job number diikuti PID.
+    ```
+    $ yes > /dev/null &
+    ```
+    Angka dalam ”[ ]” merupakan job number diikuti PID.
+
     ![img](../week-5/assets/4.3.png)
 5. Untuk melihat status proses gunakan perintah jobs.
-    - `$ jobs`
+    ```
+    $ jobs
+    ```
     ![img](../week-5/assets/4.4.png)
 6. Untuk menghentikan job, gunakan perintah kill diikuti job number atau PID proses. Untuk identifikasi job number, diikuti prefix dengan karakter ”%”.
-    - `$ kill %<nomor job> contoh : kill %1`
+    ```
+    $ kill %<nomor job> contoh : kill %1
+    ```
     ![img](../week-5/assets/4.5.png)
 7. Lihat status job setelah diterminasi
-    - `$ jobs`
+    ```
+    $ jobs
+    ```
     ![img](../week-5/assets/4.6.png)

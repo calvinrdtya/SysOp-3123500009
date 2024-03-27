@@ -88,7 +88,7 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
 * Perintah ``grep``
   Digunakan untuk menyaring masukannya dan menampilkan baris-baris yang hanya mengandung pola yang ditentukan. Pola ini disebut regular expression.
 * Perintah ``wc``
-  Digunakan untuk menghitung jumlah baris, kata dan karakter dari baris-baris masukan yang diberikan kepadanya. Untuk mengetahui berapa baris gunakan option –l, untuk mengetahui berapa kata, gunakan option –w dan untuk mengetahui berapa karakter, gunakan option –c. 
+  Digunakan untuk menghitung jumlah baris, kata dan karakter dari baris-baris masukan yang diberikan kepadanya. Untuk mengetahui berapa baris gunakan option –l, untuk mengetahui berapa kata, gunakan option –w dan untuk mengetahui berapa karakter, gunakan option –c.
   Jika salah satu option tidak digunakan, maka tampilannya adalah jumlah baris, jumlah kata dan jumlah karakter.
 * Perintah ``sort``
   Digunakan untuk mengurutkan masukannya berdasarkan urutan nomor ASCII dari karakter.
@@ -107,14 +107,14 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
    - Suatu mekanisme pipa yang digunakan sebagai alat komunikasi antar proses.
 3. Apa yang dimaksud perintah di bawah ini :
     echo, cat, more, sort, grep, wc, cut, uniq
-    - ``echo`` : digunakan untuk menampilkan text.
-    - ``cat`` : perintah untuk melihat isi file.
-    - ``more`` : digunakan untuk membuka file satu per satu.
-    - ``sort`` : digunakan untuk mengurutkan .masukannya berdasarkan urutan nomor ASCII dari karakter.
-    - ``grep`` : digunakan untuk menyaring masukannya dan menampilkan baris-baris yang hanya mengandung pola yang ditentukan.
-    - ``wc`` : digunakan untuk menghitung jumlah baris, kata dan karakter dari baris-baris masukan yang diberikan kepadanya.
-    - ``cut`` : digunakan untuk mengambil kolom tertentu dari baris-baris masukannya,
-    - ``uniq`` : digunakan untuk menghilangkan baris-baris berurutan yang mengalami duplikasi, biasanya digabungkan dalam pipeline dengan sort.
+    - ``echo`` digunakan untuk menampilkan text.
+    - ``cat`` perintah untuk melihat isi file.
+    - ``more`` digunakan untuk membuka file satu per satu.
+    - ``sort`` digunakan untuk mengurutkan .masukannya berdasarkan urutan nomor ASCII dari karakter.
+    - ``grep`` digunakan untuk menyaring masukannya dan menampilkan baris-baris yang hanya mengandung pola yang ditentukan.
+    - ``wc`` digunakan untuk menghitung jumlah baris, kata dan karakter dari baris-baris masukan yang diberikan kepadanya.
+    - ``cut`` digunakan untuk mengambil kolom tertentu dari baris-baris masukannya.
+    - ``uniq`` digunakan untuk menghilangkan baris-baris berurutan yang mengalami duplikasi, biasanya digabungkan dalam pipeline dengan sort.
 
 ## PERCOBAAN:
 
@@ -289,6 +289,8 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
    ```
    ![img](../assets/week-4/17.png)
    ![img](../assets/week-4/18.png)
+   `spasi` dihitung sebagai karakter
+   ![img](../assets/week-4/18.1.png)
 
 ## LATIHAN:
 

@@ -67,6 +67,7 @@ Dari hasil percobaan yang telah kami lakukan, dapat ditarik kesimpulan bahwa per
 
 ## Referensi
 
+- [Link PPT](https://www.canva.com/design/DAF_UJsAaZw/Kcpy-2TJeanyoAzzzBZ1tA/edit?utm_content=DAF_UJsAaZw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 - [The Fetch-Execute Cycle](https://www.youtube.com/watch?v=Z5JC9Ve1sfI)
 - [Fetch Decode Execute](https://www.youtube.com/watch?v=jFDMZpkUWCw)
 - FLOPS dan IOPS

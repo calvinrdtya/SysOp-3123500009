@@ -4,7 +4,7 @@
 </div>
 <br />
 <div align="center">
-  <img src="../assets/week-1/logo_pens.png" alt="Logo PENS">
+  <img src="https://i.ibb.co/DC3QHnM/logo-pens.png" alt="Logo PENS">
   <h3 style="text-align: center;">Disusun Oleh :</h3>
   <p style="text-align: center;">
     <strong>Calvin Raditya Sandy Winarto (3123500009)</strong><br>
@@ -28,7 +28,7 @@ Setelah mempelajari materi dalam bab ini, mahasiswa diharapkan mampu:
 * Memahami standar input, output dan error
 * Menggunakan notasi output, append dan here document
 * Memahami konsep *PIPE* dan filter
-  
+
 ## DASAR TEORI:
 
 ### 1. PROSES I/O
@@ -79,7 +79,7 @@ Proses-1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
 
 ## 5. FILTER
 Filter adalah utilitas Linux yang dapat memproses standard input (dari keyboard) dan menampilkan hasilnya pada standard output (layar). Contoh filter adalah cat, sort, grep, pr, head, tail, paste dan lainnya.
-Pada sebuah rangkaian pipa : 
+Pada sebuah rangkaian pipa :
 
         P<sub>1</sub> | P<sub>2</sub> | P<sub>3</sub> ... | P<sub>n-1</sub> | P<sub>n</sub>
 
@@ -129,7 +129,7 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
     ```
     $ ps
     ```
-    ![img](../assets/week-4/1.png)
+    ![img](assets//1.png)
 2. Output ke layar (standar output), input dari keyboard (standard input)
    ```
     $ cat
@@ -139,14 +139,14 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
     exit dengan ^d
     [Ctrl-d]
    ```
-   ![img](../assets/week-4/2.png)
+   ![img](assets//2.png)
 
 3. Input nama direktori, output tidak ada (membuat direktori baru), bila terjadi error maka tampilan error pada layar (standard error)
    ```
    $ mkdir mydir
    $ mkdir mydir **(Terdapat pesan error)**
    ```
-    ![img](../assets/week-4/3.png)
+    ![img](assets//3.png)
 
 ## Percobaan 2 : Pembelokan (redirection)
 1. Pembelokan standar output
@@ -154,20 +154,20 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
     $ cat 1> myfile.txt
     Ini adalah teks yang saya simpan ke file myfile.txt
    ```
-   ![img](../assets/week-4/4.png)
+   ![img](assets//4.png)
 2. Pembelokan standar input, yaitu input dibelokkan dari keyboard menjadi dari file
    ```
     $ cat 0< myfile.txt
     $ cat myfile.txt
    ```
-   ![img](../assets/week-4/5.png)
+   ![img](assets//5.png)
 3. Pembelokan standar error untuk disimpan di file
    ```
     $ mkdir mydir (Terdapat pesan error)
     $ mkdir mydir 2> myerror.txt
     $ cat myerror.txt
    ```
-   ![img](../assets/week-4/6.png)
+   ![img](assets//6.png)
 4. Notasi 2>&1 : pembelokan standar error (2>) adalah identik dengan file descriptor 1.
    ```
     $ ls filebaru (Terdapat pesan error)
@@ -176,7 +176,7 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
     $ ls filebaru 2> out.txt 2>&
     $ cat out.txt
    ```
-   ![img](../assets/week-4/7.png)
+   ![img](assets//7.png)
 5. Notasi 1>&2 (atau >&2) : pembelokan standar output adalah sama dengan file descriptor 2 yaitu standar error
    ```
    $ echo “mencoba menulis file” 1> baru
@@ -184,7 +184,7 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
     $ ls filebaru 2> out.tx7
    $ cat baru
    ```
-   ![img](../assets/week-4/8.png)
+   ![img](assets//8.png)
 6. Notasi >> (append)
    ```****
    $ echo “kata pertama” > surat
@@ -195,7 +195,7 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
    $ echo “kata keempat” > surat
    $ cat surat
    ```
-   ![img](../assets/week-4/9.png)
+   ![img](assets//9.png)
 7. Notasi here document (<<++ .... ++) digunakan sebagai pembatas input dari keyboard. Perhatikan bahwa tanda pembatas dapat digantikan dengan tanda apa saja, namun harus sama dan tanda penutup harus diberikan pada awal baris
    ```
    $ cat <<++
@@ -209,12 +209,12 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
    Ok!
    %%%
    ```
-   ![img](../assets/week-4/10.png)
+   ![img](assets//10.png)
 8. Notasi – (input keyboard) adalah representan input dari keyboard. Artinya menampilkan file 1, kemudian menampilkan input dari keyboard dan menampilkan file 2. Perhatikan bahwa notasi “-“ berarti menyelipkan input dari keyboard
    ```
    $ cat myfile.txt – surat
    ```
-   ![img](../assets/week-4/11.png)
+   ![img](assets//11.png)
 
 ## Percobaan 3 : Pipa (pipeline)
 
@@ -229,26 +229,26 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
    $ ls –l /etc | more
    $ ls –l /etc | sort | more
    ```
-   ![img](../assets/week-4/12.png)
-   ![img](../assets/week-4/12.1.png)
+   ![img](assets//12.png)
+   ![img](assets//12.1.png)
 2. Untuk membelokkan standart output ke file, digunakan operator ">"
    ```
    $ echo hello
    $ echo hello > output
    $ cat output
    ```
-   ![img](../assets/week-4/13.png)
+   ![img](assets//13.png)
 3. Untuk menambahkan output ke file digunakan operator ">>"
    ```
    $ echo bye >> output
    $ cat output
    ```
-   ![img](../assets/week-4/14.png)
+   ![img](assets//14.png)
 4. Untuk membelokkan standart input digunakan operator "<"
    ```
    $ cat < output
    ```
-   ![img](../assets/week-4/15.png)
+   ![img](assets//15.png)
 5. Pembelokan standart input dan standart output dapat dikombinasikan tetapi tidak boleh menggunakan nama file yang sama sebagai standart input dan output.
    ```
    $ cat < output > out
@@ -261,7 +261,7 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
    [Ctrl-c]
    $ cat out
    ```
-   ![img](../assets/week-4/16.png)
+   ![img](assets//16.png)
 
 ## Percobaan 4 : Filter
 1. Pipa juga digunakan untuk mengkombinasikan utilitas sistem untuk membentuk fungsi yang lebih kompleks
@@ -287,24 +287,24 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
     $ cat kelas1.txt kelas2.txt > kelas.txt
     $ cat kelas.txt | sort | uniq
    ```
-   ![img](../assets/week-4/17.png)
-   ![img](../assets/week-4/18.png)
+   ![img](assets//17.png)
+   ![img](assets//18.png)
    `spasi` dihitung sebagai karakter
-   ![img](../assets/week-4/18.1.png)
+   ![img](assets//18.1.png)
 
 ## LATIHAN:
 
 1. Lihat daftar secara lengkap pada direktori aktif, belokkan tampilan standard output   ke file baru.
-   ![img](../assets/week-4/list1.png)
+   ![img](assets//list1.png)
 2. Lihat daftar secara lengkap pada direktori /etc/passwd, belokkan tampilan standard output ke file baru tanpa menghapus file baru sebelumnya.
-   
-   ![img](../assets/week-4/list2.png)
+
+   ![img](assets//list2.png)
 3. Urutkan file baru dengan cara membelokkan standard input.
-   ![img](../assets/week-4/list3.png)
+   ![img](assets//list3.png)
 4. Urutkan file baru dengan cara membelokkan standard input dan standard output ke file baru.urut.
-   ![img](../assets/week-4/list4.png)
+   ![img](assets//list4.png)
 5. Buatlah direktori latihan 2 sebanyak 2 kali dan belokkan standard error ke file rmdirerror.txt.
-   ![img](../assets/week-4/list5.png)
+   ![img](assets//list5.png)
 6. Urutkan kalimat berikut :
    ```
    Jakarta
@@ -315,10 +315,10 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
    Lampung
    ```
    Dengan menggunakan notasi **here document (<@@@ ...@@@)** . [HINT](https://www.geeksforgeeks.org/how-to-use-here-document-in-bash-programming/)
-   ![img](../assets/week-4/list6.png)
+   ![img](assets//list6.png)
 
 1. Hitung jumlah baris, kata dan karakter dari file baru.urut dengan menggunakan filter dan tambahkan data tersebut ke file baru.
-   ![img](../assets/week-4/list7.png)
+   ![img](assets//list7.png)
 2. Gunakan perintah di bawah ini dan perhatikan hasilnya.
    ```
     $ cat > hello.txt
@@ -332,7 +332,7 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
     $ cat hello.txt | sort | uniq
     $ cat hello.txt | grep “dog” | grep –v “cat”
    ```
-   ![img](../assets/week-4/19.png)
+   ![img](assets//19.png)
 
 ## Kesimpulan
 Redirection, Pipeline, dan Perintah-perintah yang disebutkan adalah bagian integral dari sistem operasi UNIX/Linux dan digunakan untuk mengelola aliran data, mengelola file, dan melakukan operasi pada teks.

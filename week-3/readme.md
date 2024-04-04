@@ -4,7 +4,7 @@
 </div>
 <br />
 <div align="center">
-  <img src="../assets/week-1/logo_pens.png" alt="Logo PENS">
+  <img src="https://i.ibb.co/DC3QHnM/logo-pens.png" alt="Logo PENS">
   <h3 style="text-align: center;">Disusun Oleh :</h3>
   <p style="text-align: center;">
     <strong>Calvin Raditya Sandy Winarto (3123500009)</strong><br>
@@ -32,22 +32,22 @@
 
 ### Install GCC, make dan GIT
 
-![img](../assets/week-3/1.jpeg)
+![img](assets/1.jpeg)
 
 ### Menjalankan FLOPS dan IOPS
 
-![img](../assets/week-3/2.jpeg)
+![img](assets/2.jpeg)
 
 1. Calvin
    - Percobaan menjalankan FLOPS64 5 kali
-   ![img](../assets/week-3/flops_calvin.jpeg)
+   ![img](assets/flops_calvin.jpeg)
    - Percobaan menjalankan IOPS64 5 kali
-   ![img](../assets/week-3/iops_calvin.jpeg)
+   ![img](assets/iops_calvin.jpeg)
 3. Devi
    - percobaan menjalankan FLOPS64 5 kali
-   ![img](../assets/week-3/flops_devi.png)
+   ![img](assets/flops_devi.png)
    - Percobaan menjalankan IOPS64 5 kali
-   ![img](../assets/week-3/iops_devi.png)
+   ![img](assets/iops_devi.png)
 
 ## Percobaan
 

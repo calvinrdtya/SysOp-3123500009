@@ -140,7 +140,7 @@ Dengan menggunakan `fork()`, program dapat membuat proses baru untuk menjalankan
       }
   }
   ```
-  ![img](./assets/fork.png)
+  ![img](./assets/contohfork.png)
 - Program diatas mencetak PID, Child ID, dan PPID (Parent Process ID) pada main program dipanggil PID yang tertera 4285 dan parent ID 4285. Main program lalu menggunakan fungsi fork() lalu ditampilkan dengan keterangan parent process dan child process.
 
 ## **fork01**

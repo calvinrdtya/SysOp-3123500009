@@ -30,40 +30,40 @@
     Motherboard berfungsi untuk menampung semua komponen perangkat keras agar bisa saling terhubung dan berjalan dengan baik. Selain itu, motherboard juga berfungsi untuk mengatur kode BIOS pada ROM.
 
 ## Komponen Motherboard
-Motherboard sendiri terdiri dari beberapa komponen yang saling terintegrasi satu sama lain.
-[![img-1](/assets/week-2/motherboard/komponen.jpeg)](img)
+Motherboard sendiri terdiri dari beberapa komponen yang saling terintegrasi satu sama lain.\
+[![img-1](../assets/motherboard/1.jpg)](img)
 
 - **Socket processor**
-    - Socket  processor berfungsi sebagai tempat untuk meletakkan prosesor komputer. Terdapat 2 jenis socket processor, yaitu Socket LIF yang merupakan socket prosesor model lama, sedangkan ZIF adalah socket prosesor model baru.
-        > [![img-1](/assets/week-2/motherboard/2.jpg)](img)
+    - Socket  processor berfungsi sebagai tempat untuk meletakkan prosesor komputer. Terdapat 2 jenis socket processor, yaitu Socket LIF yang merupakan socket prosesor model lama, sedangkan ZIF adalah socket prosesor model baru.\
+    [![img-1](../assets/motherboard/2.jpg)](img)
 - **BIOS**
-    - BIOS (Basic Input Output System) adalah salah satu chip yang sangat krusial dalam motherboard. Firmware yang digunakan untuk melakukan inisialisasi hardware selama booting dan menyediakan layanan runtime untuk sistem operasi dan program. BIOS memiliki fungsi melangsungkan POST (Power on Self Test) saat proses booting (menyalakan komputer).
-        > [![img-1](/assets/week-2/motherboard/3.jpg)](img)
+    - BIOS (Basic Input Output System) adalah salah satu chip yang sangat krusial dalam motherboard. Firmware yang digunakan untuk melakukan inisialisasi hardware selama booting dan menyediakan layanan runtime untuk sistem operasi dan program. BIOS memiliki fungsi melangsungkan POST (Power on Self Test) saat proses booting (menyalakan komputer).\
+    [![img-1](../assets/motherboard/3.jpg)](img)
 - **Battery CMOS**
-    -  Battery CMOS (Complimentary Metal Oxide Semicondutor), digunakan untuk memberi daya pada BIOS dan juga untuk menyimpan semua settingan yang ada pada BIOS.
-        > [![img-1](/assets/week-2/motherboard/4.jpg)](img)
+    -  Battery CMOS (Complimentary Metal Oxide Semicondutor), digunakan untuk memberi daya pada BIOS dan juga untuk menyimpan semua settingan yang ada pada BIOS.\
+    [![img-1](../assets/motherboard/4.jpg)](img)
 - **Chipset**
-    - Chipset sendiri terdiri dari dua komponent
-        > [![img-1](/assets/week-2/motherboard/5.jpg)](img)
+    - Chipset sendiri terdiri dari dua komponent\
+        [![img-1](../assets/motherboard/5.jpg)](img)
        1. Northbridge
            - Northbridge juga  dikenal sebagai host bridge atau Memory Controller Hub bertanggung jawab untuk tugas-tugas yang membutuhkan kinerja tertinggi.
        2. Southbridge
            - Southbridge mengatur komunikasi antara CPU dan komponen motherboard lainnya bersama northbridge. Kinerja lebih lambat.
 - **Slot Memory**
-    - Slot memory berfungsi untuk memasang memori RAM (Random Access Memory). Posisinya bersebelahan dengan socket processor, pada umumnya ada lebih 1 slot memory agar bisa memasang beberapa RAM sekaligus.
-        > [![img-1](/assets/week-2/motherboard/6.jpg)](img)
+    - Slot memory berfungsi untuk memasang memori RAM (Random Access Memory). Posisinya bersebelahan dengan socket processor, pada umumnya ada lebih 1 slot memory agar bisa memasang beberapa RAM sekaligus.\
+    [![img-1](../assets/motherboard/6.jpg)](img)
 - **Slot IDE dan Slot SATA**
-    - Slot IDE dan SATA berfungsi sebagai penghubung Hard Drive, dan CD-ROM. Slot IDE biasa digunakan pada motherboard dan hardisk jenis lama, sedangkan SATA lebih banyak digunakan pada motherboard dan jenis penyimpanan HardDisk atau SSD baru.
-        > [![img-1](/assets/week-2/motherboard/7.jpg)](img)
+    - Slot IDE dan SATA berfungsi sebagai penghubung Hard Drive, dan CD-ROM. Slot IDE biasa digunakan pada motherboard dan hardisk jenis lama, sedangkan SATA lebih banyak digunakan pada motherboard dan jenis penyimpanan HardDisk atau SSD baru.\
+    [![img-1](../assets/motherboard/7.jpg)](img)
 - **Slot PCI**
-    - Slot PCI ini berfungsi untuk menambahkan perangkat Add-on Card seperti LAN card, VGA Card, Sound Card, USB Card, TV Tuner, dan perangkat tambahan lainnya.
-        > [![img-1](/assets/week-2/motherboard/8.jpg)](img)
+    - Slot PCI ini berfungsi untuk menambahkan perangkat Add-on Card seperti LAN card, VGA Card, Sound Card, USB Card, TV Tuner, dan perangkat tambahan lainnya.\
+    [![img-1](../assets/motherboard/8.jpg)](img)
 - **Power Connector**
-    - Power connector berfungsi untuk menyambungkan arus listrik power supply ke motherboard.
-        > [![img-1](/assets/week-2/motherboard/9.jpg)](img)
+    - Power connector berfungsi untuk menyambungkan arus listrik power supply ke motherboard.\
+    [![img-1](../assets/motherboard/9.jpg)](img)
 - **I/O Ports**
-    - Fungsi I/O ports atau input output ports secara langsung berinteraksi dengan pengguna komputer. I/O ports menjadi sekumpulan ports sebagai tempat colokan untuk beragam perangkat input atau output, misalnya seperti port LAN, USB, PS/2 , VGA, dan sebagainya.
-        > [![img-1](/assets/week-2/motherboard/10.jpg)](img)
+    - Fungsi I/O ports atau input output ports secara langsung berinteraksi dengan pengguna komputer. I/O ports menjadi sekumpulan ports sebagai tempat colokan untuk beragam perangkat input atau output, misalnya seperti port LAN, USB, PS/2 , VGA, dan sebagainya.\
+    [![img-1](../assets/motherboard/10.jpg)](img)
 <br><br>
 
 

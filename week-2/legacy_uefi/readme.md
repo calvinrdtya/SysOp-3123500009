@@ -36,7 +36,10 @@
 | Security | tidak menyediakan fitur keamanan. | Menyediakan fitur keamanan yang mencegah malware menginfeksi sistem saat sistem dinyalakan.
 | Booting Storage | Mendukung 2.2 Terabyte ukuran drive. | Mendukung hingga 9 Zetabyte ukuran drive.
 | Booting time | Waktu booting lebih lama. | Waktu booting UEFI lebih cepat.
-<br>
+
+![img](../assets/flow_legacy.png)
+
+
 
 # Kesimpulan
 Perbedaan utama antara BIOS Legacy dan UEFI (Unified Extensible Firmware Interface) terletak pada teknologi dan fitur yang mereka tawarkan. BIOS Legacy beroperasi dalam mode real atau 16-bit dengan kapasitas addressing terbatas pada 32-bit, yang membatasi kemampuan sistem untuk mengakses RAM dan perangkat keras modern. Selain itu, BIOS Legacy kurang memiliki fitur keamanan tingkat tinggi dan sering diakses melalui antarmuka teks sederhana. Sebaliknya, UEFI beroperasi dalam mode 32-bit atau 64-bit, mendukung addressing 64-bit untuk akses ke kapasitas RAM yang lebih besar dan perangkat keras modern. UEFI juga menonjol dengan fitur keamanan canggih seperti Secure Boot, yang memastikan integritas boot loader dan sistem operasi. Antarmuka pengguna grafis yang ditingkatkan dan kemampuan inisialisasi perangkat keras yang lebih fleksibel membuat UEFI menjadi pilihan utama dalam sistem komputer modern, sementara BIOS Legacy masih hadir dalam beberapa implementasi.

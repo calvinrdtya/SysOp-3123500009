@@ -7,10 +7,11 @@
   <img src="https://i.ibb.co/DC3QHnM/logo-pens.png]" alt="Logo PENS">
   <h3 style="text-align: center;">Disusun Oleh : </h3>
   <p style="text-align: center;">
-    <strong>Calvin Raditya Sandy Winarto - 3123500009</strong>
+    <strong>Calvin Raditya Sandy Winarto - 3123500009</strong><br>
+    <strong>Zada Devi Mariama - 3123500015</strong>
   </p>
 <h3 style="text-align: center;line-height: 1.5">Politeknik Elektronika Negeri Surabaya<br>Departemen Teknik Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
-  <hr><hr>
+  <hr>
 </div>
 
 ## Daftar Isi
@@ -592,63 +593,68 @@ Buatlah program perkalian 2 matriks [4 x 4] dalam bahasa C yang memanfaatkan `fo
 
 **Code**
   ```
-  #include <stdio.h>
+      #include <stdio.h>
   #include <stdlib.h>
-  #include <unistd.h>
   #include <sys/wait.h>
+  #include <unistd.h>
 
-  #define N 4
+  #define ROWS 4
+  #define COLS 4
 
-  void perkalian(int hasil[N][N], int a[N][N], int b[N][N]) {
-      for (int i = 0; i < N; i++) {
-          for (int j = 0; j < N; j++) {
-              hasil[i][j] = 0;
-              for (int k = 0; k < N; k++) {
-                  hasil[i][j] += a[i][k] * b[k][j];
-              }
-          }
+  void printMatrix(int matrix[ROWS][COLS]) {
+    for (int i = 0; i < ROWS; ++i) {
+      for (int j = 0; j < COLS; ++j) {
+        printf("%d\t", matrix[i][j]);
       }
+      printf("\n");
+    }
+    printf("\n");
   }
-  void cetak(int matrix[N][N]) {
-      for (int i = 0; i < N; i++) {
-          for (int j = 0; j < N; j++) {
-              printf("%d\t", matrix[i][j]);
-          }
-          printf("\n");
+
+  void multiply(int result[ROWS][COLS], int matrix1[ROWS][COLS], int matrix2[ROWS][COLS]) {
+    for (int i = 0; i < ROWS; ++i) {
+      for (int j = 0; j < COLS; ++j) {
+        result[i][j] = 0;
+        for (int k = 0; k < ROWS; ++k) {
+          result[i][j] += matrix1[i][k] * matrix2[k][j];
+        }
       }
+    }
   }
   int main() {
-      int a[N][N] = {
-          {1, 2, 3, 4},
-          {5, 6, 7, 8},
-          {9, 10, 11, 12},
-          {13, 14, 15, 16}
-      };
-      int b[N][N] = {
-          {1, 0, 0, 0},
-          {0, 1, 0, 0},
-          {0, 0, 1, 0},
-          {0, 0, 0, 1}
-      };
-      int hasil[N][N];
+    int matrix1[ROWS][COLS] = {
+      {1, 2, 3, 4},
+      {5, 6, 7, 8},
+      {9, 10, 11, 12},
+      {13, 14, 15, 16}
+    };
 
-      // Fork child process
-      pid_t pid = fork();
+    int matrix2[ROWS][COLS] = {
+      {1, 0, 0, 0},
+      {0, 1, 0, 0},
+      {0, 0, 1, 0},
+      {0, 0, 0, 1}
+    };
 
-      if (pid == -1) {
-          fprintf(stderr, "Fork failed\n");
-          return 1;
-      } else if (pid == 0) { // Child process
-          perkalian(hasil, a, b);
-          printf("Hasil Child Process :\n");
-          cetak(hasil);
-      } else { // Parent process
-          wait(NULL);
-          printf("Hasil Parent Process :\n");
-          perkalian(hasil, a, b);
-          printf("Proses Selesai\n");
-          cetak(hasil);
-      }
+    int result[ROWS][COLS];
+    pid_t pid = fork();
+
+    if (pid == 0) {
+      // Child process
+      multiply(result, matrix1, matrix2);
+      printf("Hasil Child process : PID : %d, Child ID : %d, Parent ID : %d\n", getpid(), pid, getppid());
+      printMatrix(result);
+    } else if (pid > 0) {
+      // Parent process
+      wait(NULL);
+      printf("Hasil Parent process : PID : %d, Parent ID : %d, Child ID :\n", getpid(), pid, getppid());
+      multiply(result, matrix1, matrix2);
+      printMatrix(result);
+    } else {
+      // Error 
+      fprintf(stderr, "Fork failed\n");
+      return 1;
+    }
     return 0;
   }
   ```

@@ -23,8 +23,10 @@
 3. [Kesimpulan](#kesimpulan)
 
 # Bash Tutorials
-```text
-Bash kependekan dari Bourne Again Shell, adalah penerjemah shell baris perintah dan bahasa skrip sumber terbuka. Ini menafsirkan perintah yang dimasukkan pengguna, baik secara interaktif atau dari file skrip. Ini berfungsi sebagai antarmuka untuk memanggil perintah, memungkinkan panggilan fungsi sistem.
+```
+Bash kependekan dari Bourne Again Shell, adalah penerjemah shell baris perintah dan bahasa skrip sumber terbuka.
+Ini menafsirkan perintah yang dimasukkan pengguna, baik secara interaktif atau dari file skrip. Ini berfungsi
+sebagai antarmuka untuk memanggil perintah, memungkinkan panggilan fungsi sistem.
 ```
 
 Bash menjalankan perintah dari terminal atau file. Bahasa pemrograman yang beroperasi pada sistem operasi kernel Unix/Linux, berisi semua fitur untuk menulis kode lengkap.
@@ -66,8 +68,9 @@ Bash adalah tipe shell khusus yang menerima masukan dari perintah, menjalankan k
 |      Ini hanya mendukung satu perintah pada satu waktu.     |     Hanya satu baris dalam sebuah file yang dijalankan secara berurutan          |
 
 # Bash Shell Variable
-```text
-Variabel berfungsi sebagai wadah yang digunakan untuk menyimpan data dalam pemrograman. Ini mencakup penunjuk ke lokasi memori data.
+```
+Variabel berfungsi sebagai wadah yang digunakan untuk menyimpan data dalam pemrograman.
+Ini mencakup penunjuk ke lokasi memori data.
 ```
 
 Deklarasikan variabel
@@ -101,8 +104,9 @@ Output<br>
 ![img](./assets/9.png)<br>
 
 ### Bash Local variables
-```text
-Variabel lokal dideklarasikan di dalam blok kode atau fungsi. Cakupan variabel-variabel ini hanya terlihat di dalam blok tempat variabel-variabel tersebut dideklarasikan.
+```
+Variabel lokal dideklarasikan di dalam blok kode atau fungsi. Cakupan variabel-variabel ini
+hanya terlihat di dalam blok tempat variabel-variabel tersebut dideklarasikan.
 ```
 Syntax
 ```
@@ -211,8 +215,9 @@ Output<br>
  ![img](./assets/13.png)
 
 # Bash Comments
-```text
-Comments adalah pernyataan kode yang berisi teks yang dapat dibaca pengguna yang dilewati shell selama eksekusi. Setiap bahasa pemrograman menyertakan fitur komentar, yang memberikan deskripsi baris kode atau pernyataan.
+```
+Comments adalah pernyataan kode yang berisi teks yang dapat dibaca pengguna yang dilewati shell selama eksekusi.
+Setiap bahasa pemrograman menyertakan fitur komentar, yang memberikan deskripsi baris kode atau pernyataan.
 ```
 
 ### Ada dua jenis Komen
@@ -338,8 +343,10 @@ Output<br>
 
 
 # Bash Expansion
-```text
-cara menulis skrip batch dalam skrip shell dan menjalankannya adalah dengan memasukkan perintah ke OS untuk membuat panggilan sistem dan melakukan tindakan. perintah masukan pengguna di terminal untuk melakukan operasi seperti ls, cd, mkdir dll.
+```
+cara menulis skrip batch dalam skrip shell dan menjalankannya adalah dengan memasukkan perintah ke
+OS untuk membuat panggilan sistem dan melakukan tindakan. perintah masukan pengguna di terminal untuk
+melakukan operasi seperti ls, cd, mkdir dll.
 ```
 
 Cara lain, Beberapa perintah dapat ditempatkan dalam satu file, juru bahasa bash membaca perintah dan menjalankannya
@@ -362,8 +369,10 @@ Ada berbagai jenis ekspresi konisional di Bash
 - Operator Logis
 
 ### File Operators
-```text 
-Bash menyediakan operator logika pada FIle dan direktori untuk menguji ekspresi kondisional. Ini memungkinkan Anda untuk memeriksa berbagai operasi seperti keberadaan, dan izin, ukuran. Ini digunakan ekspresi kondisional dalam pernyataan kondisional seperti if else dan case.
+```
+Bash menyediakan operator logika pada FIle dan direktori untuk menguji ekspresi kondisional. 
+Ini memungkinkan Anda untuk memeriksa berbagai operasi seperti keberadaan, dan izin, ukuran. Ini
+digunakan ekspresi kondisional dalam pernyataan kondisional seperti if else dan case.
 ```
 
 ![img](./assets/32.png)<br>
@@ -391,8 +400,9 @@ conditiona_expressions berisi opsi, dan jalur file, yang selalu mengembalikan ni
 
 
 # Bash - Case Statements
-```text
-Pernyataan case mirip dengan switch case dalam bahasa pemrograman lain. Ini digunakan untuk membandingkan masukan yang diberikan dengan beberapa pola, dan perintah di dalam pola yang cocok dijalankan.
+```
+Pernyataan case mirip dengan switch case dalam bahasa pemrograman lain. Ini digunakan untuk
+membandingkan masukan yang diberikan dengan beberapa pola, dan perintah di dalam pola yang cocok dijalankan.
 ```
 
 ![img](./assets/33.png)<br>
@@ -416,8 +426,9 @@ Output<br>
 ![img](./assets/37.png)<br>
 
 ### Expansion($)
-```text
-Simbol tanda dolar digunakan untuk berbagai jenis perluasan parameter perluasan,(variabel{variabel}) Substitusi, ($(ekspresi)) ekspresi artema ($((ekspresi))).
+```
+Simbol tanda dolar digunakan untuk berbagai jenis perluasan parameter perluasan,
+(variabel{variabel}) Substitusi, ($(ekspresi)) ekspresi artema ($((ekspresi))).
 ```
 
 ### Ambersand(&)
@@ -428,8 +439,9 @@ Menambahkan & di akhir perintah memungkinkan Anda menjalankan perintah di latar 
 ![img](./assets/38.png)<br>
 
 ### Single quotes
-```text
-Single quotes (') are used to define a string without a special meaning. It means all the variables and expansion are not interepreted and print the same literal string
+```
+Tanda kutip tunggal (') digunakan untuk mendefinisikan suatu string tanpa arti khusus. Itu berarti
+segalanya variabel dan ekspansi tidak ditafsirkan dan mencetak string literal yang sama
 ```
 
 ![img](./assets/39.png)<br>
@@ -443,10 +455,11 @@ Output<br>
 ![img](./assets/40.1.png)<br>
 
 ### Double qoutes
-```text
+```
 Tanda kutip ganda (') digunakan untuk mendefinisikan string literal dengan arti khusus.
 
-jika string berisi variabel dan sintaks perluasan, Ini diinterprestasikan dan diperluas, dengan nilai yang dievaluasi saat runtime.
+jika string berisi variabel dan sintaks perluasan, Ini diinterprestasikan dan diperluas,
+dengan nilai yang dievaluasi saat runtime.
 
 jika string tidak ingin memperluas variabelnya, maka Anda dapat keluar dari \ sebelum simbol $ dolar
 ```
@@ -456,8 +469,9 @@ Output<br>
 ![img](./assets/41.1.png)<br>
 
 ### Backslash Character ( \ )
-```text
-Karakter garis miring terbalik digunakan untuk keluar dari karakter dalam string. ini digunakan dalam string yang dikutip ganda.
+```
+Karakter garis miring terbalik digunakan untuk keluar dari karakter dalam string.
+ini digunakan dalam string yang dikutip ganda.
 ```
 
 ![img](./assets/42.png)<br>
@@ -465,8 +479,9 @@ Output<br>
 ![img](./assets/42.1.png)<br>
 
 ### Comment ( # )
-```text
-Simbol komentar digunakan untuk mengomentari sebaris kode. Baris komentar selalu dimulai dengan #. Itu diabaikan oleh penerjemah bash.
+```
+Simbol komentar digunakan untuk mengomentari sebaris kode. Baris komentar
+selalu dimulai dengan #. Itu diabaikan oleh penerjemah bash.
 ```
 
 ![img](./assets/43.png)<br>
@@ -474,10 +489,12 @@ Output<br>
 ![img](./assets/43.1.png)<br>
 
 # Bash - if elif else
-```text
-Skrip Bash menyediakan ekspresi kondisional untuk mengeksekusi kode berbeda berdasarkan kondisi yang ditentukan.
+```
+Skrip Bash menyediakan ekspresi kondisional untuk mengeksekusi kode berbeda berdasarkan
+kondisi yang ditentukan.
 
-Pernyataan Bersyarat Bash Shell Terkadang, Anda mungkin perlu mengeksekusi beragam blok kode bergantung pada berbagai keputusan berdasarkan kondisi tertentu.
+Pernyataan Bersyarat Bash Shell Terkadang, Anda mungkin perlu mengeksekusi beragam blok kode
+bergantung pada berbagai keputusan berdasarkan kondisi tertentu.
 ```
 
 Skrip Bash memfasilitasi hal ini melalui pernyataan kondisional
@@ -485,7 +502,7 @@ Skrip Bash memfasilitasi hal ini melalui pernyataan kondisional
 ![img](./assets/44.png)<br>
 
 ### If Conditional Statements
-```text
+```
 Pernyataan if di Bash digunakan untuk mengeksekusi blok kode ketika kondisi yang ditentukan benar.
 ```
 
@@ -497,8 +514,9 @@ Output<br>
 ![img](./assets/46.1.png)<br>
 
 ### If..Elif..Else Statements
-```text
-Gunakan pernyataan kondisional if..elif..else di Bash untuk mengeksekusi blok kode yang berbeda berdasarkan beberapa kondisi.
+```
+Gunakan pernyataan kondisional if..elif..else di Bash untuk mengeksekusi blok kode yang berbeda
+berdasarkan beberapa kondisi.
 ```
 ![img](./assets/47.png)\
 Output\
@@ -517,7 +535,7 @@ Misalkan Anda ingin menjalankan perintah berulang kali atau mencetak array.for l
 
 
 #### For Loop
-```text
+```
 for loop digunakan untuk mengeksekusi kode beberapa kali berdasarkan
 ```
 
@@ -529,8 +547,9 @@ Output\
 ![img](./assets/50.1.png)
 
 ### For index loop
-```text
-untuk loop indeks mirip dengan bahasa C untuk loop indeks. Ini mengeksekusi kode beberapa kali berdasarkan kondisi benar, Ini dimulai dengan nilai awal dan iterasi berisi nilai yang akan bertambah 1.
+```
+untuk loop indeks mirip dengan bahasa C untuk loop indeks. Ini mengeksekusi kode beberapa
+kali berdasarkan kondisi benar, Ini dimulai dengan nilai awal dan iterasi berisi nilai yang akan bertambah 1.
 ```
 ![img](./assets/51.png)
 
@@ -540,8 +559,9 @@ Output\
 ![img](./assets/51.2.png)
 
 ### While Loop
-```text
-Perulangan while di Bash memungkinkan eksekusi kode berulang selama kondisi yang ditentukan benar. Jika kondisi menjadi salah, perulangan akan keluar.
+```
+Perulangan while di Bash memungkinkan eksekusi kode berulang selama kondisi yang
+ditentukan benar. Jika kondisi menjadi salah, perulangan akan keluar.
 ```
 
 Struktur dasar perulangan while adalah sebagai berikut:
@@ -554,8 +574,9 @@ Output\
 
 
 ### Until Loop
-```text
-Kata kunci sampai di Bash digunakan untuk mengeksekusi kode berulang kali hingga kondisi yang ditentukan menjadi benar, di mana loop keluar.
+```
+Kata kunci sampai di Bash digunakan untuk mengeksekusi kode berulang kali
+hingga kondisi yang ditentukan menjadi benar, di mana loop keluar.
 ```
 
 #### Struktur dasar dari perulangan sampai adalah sebagai berikut.
@@ -569,8 +590,11 @@ Output\
 # Bash - Append String
 ### Bash Athematic expressions
 Ekspresi artema digunakan untuk melakukan operasi matematika
-```text
-Ekspresi adalah istilah yang digunakan dalam matematika untuk menunjukkan suatu operasi. Ini berisi operan dan operator untuk melakukan operasi matematika. a<b adalah ekspresi. Ini mungkin berisi operator biner atau unary Di bash, Ekspresi dibuat menggunakan tanda kurung (()) dengan operan dan operator sebagai argumen. ((a)) adalah ekspresi bash.
+```
+Ekspresi adalah istilah yang digunakan dalam matematika untuk menunjukkan suatu operasi.
+Ini berisi operan dan operator untuk melakukan operasi matematika. a<b adalah ekspresi. Ini
+mungkin berisi operator biner atau unary Di bash, Ekspresi dibuat menggunakan tanda kurung (())
+dengan operan dan operator sebagai argumen. ((a)) adalah ekspresi bash.
 ```
 ![img](./assets/54.png)\
 - Operasi matematika dapat berisi sub ekspresi yang dipisahkan dengan koma.
@@ -582,8 +606,9 @@ Output\
 Ekspresi artema dibuat menggunakan operator di bawah ini
 - Operator Artmatik
 - Operator Perbandingan
-```text
-Operator perbandingan digunakan untuk mengecek satu sama lain dengan membandingkan nilai Operator (<, <=, >, >=, ==, !=)
+```
+Operator perbandingan digunakan untuk mengecek satu sama lain dengan
+membandingkan nilai Operator (<, <=, >, >=, ==, !=)
 ```
 ![img](./assets/55.png)\
 Output\
@@ -593,8 +618,9 @@ Output\
 - Pernyataan bersyarat
 
 ### Bash Athematic Expansion
-```text
-Ekspansi sama dengan ekspresi, Ekspansi menghitung nilai ekspresi dan hasilnya diganti dengan nilai. Itu selalu diawali dengan tanda dolar.
+```
+Ekspansi sama dengan ekspresi, Ekspansi menghitung nilai ekspresi dan hasilnya
+diganti dengan nilai. Itu selalu diawali dengan tanda dolar.
 ```
 
 ![img](./assets/56.png)\
@@ -604,8 +630,9 @@ Output\
 ![img](./assets/56.1.png)
 
 # Bash - Functions
-```text
-Fungsi adalah kode yang dapat digunakan kembali dan dikelompokkan dalam satu nama. Mendeklarasikan suatu fungsi Memanggil Fungsi Fungsi dengan argumen Cakupan variabel dalam Fungsi
+```
+Fungsi adalah kode yang dapat digunakan kembali dan dikelompokkan dalam satu nama.
+Mendeklarasikan suatu fungsi Memanggil Fungsi Fungsi dengan argumen Cakupan variabel dalam Fungsi
 
 Definisi fungsi berisi beberapa baris kode yang akan dieksekusi.
 Fungsi berisi nama fungsi yang diapit {}.
@@ -622,8 +649,9 @@ Parameter dapat diakses menggunakan $1 $2 $3.. $n
 
 # Bash - Append String
 ### Simple variable append
-```text
-Mulailah dengan mendeklarasikan dua variabel string dalam skrip Bash, yang dapat dicetak ke konsol menggunakan echo dengan mengapit variabel dalam tanda kutip ganda.
+```
+Mulailah dengan mendeklarasikan dua variabel string dalam skrip Bash, yang dapat
+dicetak ke konsol menggunakan echo dengan mengapit variabel dalam tanda kutip ganda.
 ```
 ![img](./assets/57.png)\
 Output\
@@ -646,8 +674,9 @@ Output\
 ![img](./assets/58.1.png)
 
 ### Use printf command
-```text
-printf digunakan untuk memformat string dengan berbagai opsi pemformatan yang kompleks. Kita dapat menggunakan perintah printf untuk menggabungkan string. Formatnya adalah %s%s, yang menambahkan dua variabel string.
+```
+printf digunakan untuk memformat string dengan berbagai opsi pemformatan yang
+kompleks. Kita dapat menggunakan perintah printf untuk menggabungkan string. Formatnya adalah %s%s, yang menambahkan dua variabel string.
 ```
 
 ![img](./assets/59.png)\
@@ -655,8 +684,10 @@ Output\
 ![img](./assets/59.1.png)
 
 ### Using here string
-```text
-String adalah sintaks khusus untuk meneruskan string ke perintah dalam skrip Bash. Mereka digunakan untuk meneruskan string input tanpa menggunakan sumber lain, seperti file. Ini memungkinkan meneruskan string ke perintah Bash apa pun dari file atau baris perintah.
+```
+String adalah sintaks khusus untuk meneruskan string ke perintah dalam skrip Bash.
+Mereka digunakan untuk meneruskan string input tanpa menggunakan sumber lain, seperti file.
+Ini memungkinkan meneruskan string ke perintah Bash apa pun dari file atau baris perintah.
 ```
 
 ![img](./assets/60.png)\
@@ -673,8 +704,9 @@ Operator adalah simbol dalam pemrograman yang melakukan suatu operasi pada opera
 ```
 
 ### Bash Arithmetic Operators
-```text
-Operator aritmatika di Bash menyediakan operasi aritmatika seperti operator penjumlahan, pembagian, pengurangan, dan perkalian pembagian.
+```
+Operator aritmatika di Bash menyediakan operasi aritmatika seperti operator
+penjumlahan, pembagian, pengurangan, dan perkalian pembagian.
 ```
 
 
@@ -788,8 +820,9 @@ Anda juga dapat melakukannya dengan operator ternary.
 
 # Bash - Check Directory
 ### periksa direktori yang ada dan cetak pesannya
-```text
-Ekspresi kondisional berisi opsi -d dan jalur direktori. Opsi -d yang memeriksa apakah direktori ada atau tidak.
+```
+Ekspresi kondisional berisi opsi -d dan jalur direktori. Opsi -d yang memeriksa
+apakah direktori ada atau tidak.
 ```
 
 ### Example
@@ -883,8 +916,10 @@ Output\
 ![img](./assets/66.7.png)
 
 # Bash - Split String
-```text
-Dalam beberapa kasus, saat bekerja dengan skrip bash, timbul kebutuhan untuk memisahkan string berdasarkan pembatas dan mengekstrak beberapa string untuk diproses lebih lanjut atau disimpan dalam variabel.
+```
+Dalam beberapa kasus, saat bekerja dengan skrip bash, timbul kebutuhan untuk
+memisahkan string berdasarkan pembatas dan mengekstrak beberapa string untuk diproses
+lebih lanjut atau disimpan dalam variabel.
 ```
 
 Split String ini membahas tiga metode.
@@ -918,8 +953,10 @@ Output\
 ![img](./assets/67.5.png)
 
 # Bash - String Length
-```text
-Panjang string ditentukan oleh jumlah karakter yang dikandungnya, dan umumnya mudah untuk memastikan panjangnya untuk teks normal. String Length ini akan membahas berbagai metode untuk menghitung jumlah karakter dalam sebuah string dengan pengkodean UTF.
+```
+Panjang string ditentukan oleh jumlah karakter yang dikandungnya, dan umumnya
+mudah untuk memastikan panjangnya untuk teks normal. String Length ini akan membahas
+berbagai metode untuk menghitung jumlah karakter dalam sebuah string dengan pengkodean UTF.
 ```
 
 ### Menggunakan Sintaks ${#variable}
@@ -959,8 +996,9 @@ Output\
 File `.bashrc` adalah file skrip bash yang dijalankan dalam kasus berikut
 - Menggunakan eksekusi skrip bash.
 - Bash shell dibuka dan dimulai secara interaktif.
-```text
-File .bashrc adalah skrip yang dijalankan saat pengguna login. File ini terletak di direktori home pengguna. Ini berisi variabel lingkungan dan preferensi pengguna yang akan dikonfigurasi dalam file ini.
+```
+File .bashrc adalah skrip yang dijalankan saat pengguna login. File ini terletak di
+direktori home pengguna. Ini berisi variabel lingkungan dan preferensi pengguna yang akan dikonfigurasi dalam file ini.
 ```
 __File `.bashrc` dapat dilihat menggunakan editor Vi atau Nano.__
 

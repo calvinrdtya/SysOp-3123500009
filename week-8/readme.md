@@ -976,7 +976,7 @@ file `.bashrc` terletak di dua tempat
     - File ini terletak di `/etc/bash.bashrc`.
 
 ### Cara memuat ulang pengaturan .bashrc tanpa keluar dan masuk kembali?
-```text
+```text 
 jika Anda membuat perubahan apa pun pada file .bashrc, Perubahan tidak akan langsung terlihat. Anda harus menutup dan memulai kembali sesi bash untuk melakukan perubahan.
 ```
 

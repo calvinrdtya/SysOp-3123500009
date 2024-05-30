@@ -32,9 +32,13 @@
 - Resource Sharing
     - Message Passing
     - Shared Memory
-    ```
-    Teknik-teknik diatas diatur secara eksplisit oleh programmer. Namun, thread berbagi memori dan sumber daya dari proses yang menjadi miliknya secara default. Manfaat berbagi kode dan data adalah memungkinkan aplikasi memiliki beberapa rangkaian aktivitas dalam ruang alamat yang sama.
-    ```
+```
+Teknik-teknik diatas diatur secara eksplisit oleh programmer. 
+Namun, thread berbagi memori dan sumber daya dari proses 
+yang menjadi miliknya secara default. Manfaat berbagi kode 
+dan data adalah memungkinkan aplikasi memiliki beberapa 
+rangkaian aktivitas dalam ruang alamat yang sama.
+```
 
 - Economy
     - Mengalokasikan memori dan sumber daya untuk pembuatan proses adalah pekerjaan yang mahal dalam hal waktu dan ruang.
@@ -64,7 +68,10 @@
 
 ## Multicore Programming
 ```
-Sistem Multicore terdiri dari dua atau lebih prosesor yang telah terpasang pada satu chip untuk meningkatkan kinerja, mengurangi konsumsi daya, dan pemrosesan beberapa tugas secara simultan lebih efisien.
+Sistem Multicore terdiri dari dua atau lebih 
+prosesor yang telah terpasang pada satu chip 
+untuk meningkatkan kinerja, mengurangi konsumsi 
+daya dan pemrosesan beberapa tugas secara simultan lebih efisien.
 ```
 
 - Dividing Activities
@@ -86,11 +93,11 @@ Sistem Multicore terdiri dari dua atau lebih prosesor yang telah terpasang pada 
 ## Difference between Concurrency and Parallelism
 - Concurrency
     - Pendekatan yang digunakan untuk mengurangi waktu respons sistem dengan menggunakan unit pemrosesan tunggal. Konkurensi menciptakan ilusi paralelisme, namun sebenarnya potongan tugas tidak diproses secara paralel, namun di dalam aplikasi, ada lebih dari satu tugas yang diproses dalam satu waktu. Itu tidak sepenuhnya mengakhiri satu tugas sebelum memulai tugas berikutnya. Konkurensi dicapai melalui operasi interleaving proses pada unit pemrosesan pusat (CPU) atau dengan kata lain dengan peralihan konteks. itulah alasannya seperti pemrosesan paralel. Ini meningkatkan jumlah pekerjaan yang diselesaikan pada suatu waktu.
-    ![img](./assets/1.png)
+![img](./assets/1.png)
 
 - Parallelism
     - Penerapan di mana tugas dibagi menjadi sub-tugas yang lebih kecil yang diproses secara bersamaan atau paralel. Ini digunakan untuk meningkatkan throughput dan kecepatan komputasi sistem dengan menggunakan banyak prosesor. Hal ini memungkinkan CPU sekuensial tunggal untuk melakukan banyak hal “tampaknya” secara bersamaan. 
-    ![img](./assets/2.png)
+![img](./assets/2.png)
 
 ## Perbedaan antara Konkurensi dan Paralelisme
 
@@ -106,7 +113,20 @@ Sistem Multicore terdiri dari dua atau lebih prosesor yang telah terpasang pada 
 
 ## Amdahl Law
 ```
-Rumus yang digunakan untuk mencari perbaikan semaksimal mungkin hanya dengan memperbaiki bagian tertentu dari suatu sistem. Ini sering digunakan dalam komputasi paralel untuk memprediksi kecepatan teoretis saat menggunakan banyak prosesor. Speedup- Speedup didefinisikan sebagai rasio kinerja untuk keseluruhan tugas menggunakan peningkatan dan kinerja untuk seluruh tugas tanpa menggunakan peningkatan atau speedup dapat didefinisikan sebagai rasio waktu eksekusi untuk seluruh tugas tanpa menggunakan peningkatan dan waktu eksekusi untuk seluruh tugas menggunakan peningkatan
+Rumus yang digunakan untuk mencari perbaikan 
+semaksimal mungkin hanya dengan memperbaiki 
+bagian tertentu dari suatu sistem. Ini sering 
+digunakan dalam komputasi paralel untuk 
+memprediksi kecepatan teoretis saat 
+menggunakan banyak prosesor. Speedup-Speedup 
+didefinisikan sebagai rasio kinerja untuk 
+keseluruhan tugas menggunakan peningkatan 
+dan kinerja untuk seluruh tugas tanpa 
+menggunakan peningkatan atau speedup dapat 
+didefinisikan sebagai rasio waktu eksekusi 
+untuk seluruh tugas tanpa menggunakan 
+peningkatan dan waktu eksekusi untuk 
+seluruh tugas menggunakan peningkatan
 ```
 
 ## User Threads dan Kernel Threads
@@ -139,7 +159,15 @@ Mencakup thread POSIX, Mach C-Threads
 
 ## Kernel-Level Thread
 ```
-Thread tingkat kernel juga merupakan jenis thread yang ditangani langsung melalui manajemen thread kernel. Thread tingkat Kernel langsung ditangani oleh OS sedangkan manajemen thread dilakukan oleh kernel. Setiap thread mengatur dirinya sendiri dan kernel menyediakan setiap thread dengan konteksnya sendiri dengan informasi tentang status thread, seperti nama, grup, dan prioritasnya.
+Thread tingkat kernel juga merupakan jenis 
+thread yang ditangani langsung melalui 
+manajemen thread kernel. Thread tingkat 
+Kernel langsung ditangani oleh OS sedangkan 
+manajemen thread dilakukan oleh kernel. 
+Setiap thread mengatur dirinya sendiri dan 
+kernel menyediakan setiap thread dengan 
+konteksnya sendiri dengan informasi 
+tentang status thread, seperti nama, grup, dan prioritasnya.
 ```
 Contoh thread tingkat Kernel adalah thread Java, thread POSIX, dll.
 
